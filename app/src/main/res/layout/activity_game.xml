@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="white">
+    android:background="@color/white">
 
     <!-- linear layout 1 -->
     <LinearLayout
@@ -154,7 +154,8 @@
             android:padding="@dimen/padding_card"
             android:scaleType="centerInside"
             android:src="@drawable/img_card_back"
-            android:tag="6"/>
+            android:tag="6"
+            tools:ignore="NestedWeights" />
 
         <!-- card 7 -->
         <ImageView

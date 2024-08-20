@@ -34,7 +34,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:textAppearance="Large"
-            android:text="@string/button_play"
+            android:text="@string/btn_play"
             android:onClick="onclickPlay"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -51,7 +51,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:textAppearance="Large"
-            android:text="@string/button_leaderboard"
+            android:text="@string/btn_leaderboard"
             android:onClick="onclickLeaderboard"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
