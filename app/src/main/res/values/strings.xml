@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AssignmentTwo</string>
+    <string name="button_play">Play Game</string>
+    <string name="button_leaderboard">Leaderboard</string>
+</resources>
