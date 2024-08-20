@@ -19,10 +19,12 @@
     <string name="desc_card_11">Card 11</string>
     <string name="desc_game_banner">Game banner</string>
     <string name="desc_guess_count">Game banner</string>
+    <string name="desc_img_memory_text">Game title: Memory</string>
     <string name="avatar_color">Avatar Color</string>
     <string name="avatar_type_coder">Coder</string>
     <string name="avatar_type_artist">Artist</string>
     <string name="avatar_type_astronaut">Astronaut</string>
     <string name="avatar_type_doctor">Doctor</string>
     <string name="avatar_type_scientist">Scientist</string>
+    <string name="edit_txt_name_hint">Enter Name</string>
 </resources>

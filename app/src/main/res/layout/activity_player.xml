@@ -10,8 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_gravity="center"
-        android:scaleType="centerInside"/>
+        android:scaleType="centerInside"
+        android:src="@drawable/img_memory_text"
+        android:contentDescription="@string/desc_img_memory_text"/>
     
     <TextView
         android:id="@+id/tv_playerscore"
@@ -35,7 +36,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="Large"
-            android:hint="Enter name"/>
+            android:autofillHints="name"
+            android:hint="@string/edit_txt_name_hint"
+            android:inputType="text"/>
 
     </LinearLayout>
     
