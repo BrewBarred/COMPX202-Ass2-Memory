@@ -1,6 +1,234 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- main layout -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="white">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- linear layout 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:contentDescription="@string/desc_default"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- game banner -->
+        <ImageView
+            android:id="@+id/main_game_banner"
+            android:contentDescription="@string/desc_game_banner"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_memory_text"
+            android:paddingTop="@dimen/padding_default"
+            tools:ignore="NestedWeights"/>
+
+        <!-- MEANT TO BE IMAGEVIEW?? -->
+        <!-- total guess count -->
+        <TextView
+            android:id="@+id/tv_num_guesses"
+            android:contentDescription="@string/desc_guess_count"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textAppearance="Title"
+            android:text="@string/default_guesses"/>
+        
+    </LinearLayout>
+
+    <!-- card row 1 -->
+    <LinearLayout
+        android:id="@+id/card_row_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- card 0 -->
+        <ImageView
+            android:id="@+id/iv_card_0"
+            android:contentDescription="@string/desc_card_0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_card"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_card_back"
+            android:tag="0"
+            tools:ignore="NestedWeights" />
+
+        <!-- card 1 -->
+        <ImageView
+            android:id="@+id/iv_card_1"
+            android:contentDescription="@string/desc_card_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_card"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_card_back"
+            android:tag="1"/>
+
+        <!-- card 2 -->
+        <ImageView
+            android:id="@+id/iv_card_2"
+            android:contentDescription="@string/desc_card_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_card"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_card_back"
+            android:tag="2"/>
+        
+    </LinearLayout>
+
+    <!-- card row 2 -->
+    <LinearLayout
+        android:id="@+id/card_row_2"
+        android:contentDescription="@string/desc_default"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- card 3 -->
+        <ImageView
+            android:id="@+id/iv_card_3"
+            android:contentDescription="@string/desc_card_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_card"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_card_back"
+            android:tag="3"
+            tools:ignore="NestedWeights" />
+
+        <!-- card 4 -->
+        <ImageView
+            android:id="@+id/iv_card_4"
+            android:contentDescription="@string/desc_card_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_card"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_card_back"
+            android:tag="4"/>
+
+        <!-- card 5 -->
+        <ImageView
+            android:id="@+id/iv_card_5"
+            android:contentDescription="@string/desc_card_5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_card"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_card_back"
+            android:tag="5"/>
+
+    </LinearLayout>
+
+    <!-- card row 3 -->
+    <LinearLayout
+        android:id="@+id/card_row_3"
+        android:contentDescription="@string/desc_default"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- card 6 -->
+        <ImageView
+            android:id="@+id/iv_card_6"
+            android:contentDescription="@string/desc_card_6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_card"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_card_back"
+            android:tag="6"/>
+
+        <!-- card 7 -->
+        <ImageView
+            android:id="@+id/iv_card_7"
+            android:contentDescription="@string/desc_card_7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_card"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_card_back"
+            android:tag="7"/>
+
+        <!-- back of card 8 -->
+        <ImageView
+            android:id="@+id/iv_card_8"
+            android:contentDescription="@string/desc_card_8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_card"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_card_back"
+            android:tag="8"/>
+
+    </LinearLayout>
+
+    <!-- card row 4 -->
+    <LinearLayout
+        android:id="@+id/card_row_4"
+        android:contentDescription="@string/desc_default"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- card 9 -->
+        <ImageView
+            android:id="@+id/iv_card_9"
+            android:contentDescription="@string/desc_card_9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_card"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_card_back"
+            android:tag="9"
+            tools:ignore="NestedWeights" />
+
+        <!-- card 10 -->
+        <ImageView
+            android:id="@+id/iv_card_10"
+            android:contentDescription="@string/desc_card_10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_card"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_card_back"
+            android:tag="10"/>
+
+        <!-- card 11 -->
+        <ImageView
+            android:id="@+id/iv_card_11"
+            android:contentDescription="@string/desc_card_11"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_card"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_card_back"
+            android:tag="11"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

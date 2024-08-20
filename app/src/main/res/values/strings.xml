@@ -2,4 +2,20 @@
     <string name="app_name">AssignmentTwo</string>
     <string name="button_play">Play Game</string>
     <string name="button_leaderboard">Leaderboard</string>
+    <string name="default_guesses">Guesses: 0</string>
+    <string name="desc_default">@null</string>
+    <string name="desc_card_0">Card 0</string>
+    <string name="desc_card_1">Card 1</string>
+    <string name="desc_card_2">Card 2</string>
+    <string name="desc_card_3">Card 3</string>
+    <string name="desc_card_4">Card 4</string>
+    <string name="desc_card_5">Card 5</string>
+    <string name="desc_card_6">Card 6</string>
+    <string name="desc_card_7">Card 7</string>
+    <string name="desc_card_8">Card 8</string>
+    <string name="desc_card_9">Card 9</string>
+    <string name="desc_card_10">Card 10</string>
+    <string name="desc_card_11">Card 11</string>
+    <string name="desc_game_banner">Game banner</string>
+    <string name="desc_guess_count">Game banner</string>
 </resources>
